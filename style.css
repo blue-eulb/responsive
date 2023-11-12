@@ -1,0 +1,88 @@
+body {
+    background-color: aquamarine;
+}
+
+.h1 {
+    text-align: center;
+    margin: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 3px solid white;
+}
+
+h1 {
+    font-size: 60px;
+    
+    color: lightcoral;
+    margin-left: 5%;
+    font-family: "black ops one", sans-serif;
+}
+
+.top-menu {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+}
+
+.top {
+    margin: auto;
+    height: 70%;
+    flex: 1;
+    border: 5px solid white;
+    background-color: lightcoral;
+}
+
+.top-second {
+    flex: 2;
+}
+
+.content {
+    padding: 3% 5%;
+    height: 500px;
+    width: 80%;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    gap: 30px;
+}
+
+.bottom {
+    background-color: lightcoral;
+}
+
+.b-last {
+    grid-column: span 3;
+}
+
+.b-3 {
+    grid-row: span 2;
+}
+
+@media (max-width: 680px) {
+
+    .top-menu {
+        height: 50px;
+    }
+    .content {
+        height: 350px;
+    }
+    h1 {
+        font-size: 40px;
+        color: cadetblue;
+    }
+
+    body {
+        background-color: rgb(20, 49, 47);
+    }
+
+    .top, .bottom {
+        background-color: cadetblue;
+    }
+}
